@@ -1,4 +1,4 @@
-# Numen CTF 2023 : Wallet
+# Numen CTF 2023 : Counter
 
 ### Contract code :
 ```solidity
