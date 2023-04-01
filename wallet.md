@@ -309,7 +309,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "../src/NumenWallet.sol";
 
-contract CounterTest is Test {
+contract WalletTest is Test {
     Wallet public wallet;
     Verifier public verifier;
     NC public token;
@@ -443,7 +443,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "../src/NumenWallet.sol";
 
-contract CounterTest is Test {
+contract WalletTest is Test {
     Wallet public wallet;
     Verifier public verifier;
     NC public token;
