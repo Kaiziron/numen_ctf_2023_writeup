@@ -94,6 +94,7 @@ In `execute()`, it has inline assembly that allow us to change the jump destinat
 This vulnerability is shown in swcregistry, also it's in some ctf as well, such as the jump challenge from NahamCon EU CTF 2022
 
 https://swcregistry.io/docs/SWC-127#functiontypessol
+
 https://medium.com/authio/solidity-ctf-part-2-safe-execution-ad6ded20e042
 
 We can control the `v` that will affect the jump destination
