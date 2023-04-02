@@ -156,7 +156,7 @@ So our goal is to jump to 0x1f5 and it will emit `SendFlag`
 
 However it's adding 0x22a with `v`, which 0x22a is larger than 0x1f5, but it's not a problem
 
-Although it's using solidity version > 0.8.0, it is performing the addition in inline assembly which has no protection for overflow/underflow, as can just overflow it to get 0x1f5
+Although it's using solidity version > 0.8.0, it is performing the addition in inline assembly which has no protection for overflow/underflow, so can just overflow it to get 0x1f5
 
 0x22a + 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcb will overflow and become 0x1f5
 
