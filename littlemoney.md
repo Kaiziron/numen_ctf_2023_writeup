@@ -195,7 +195,7 @@ import "forge-std/Test.sol";
 import "../src/NumenCTF.sol";
 import "../src/deploy_bytecode.sol";
 
-contract lenderpoolTest is Test {
+contract littlemoneyTest is Test {
     Numen public littlemoney;
     Deployer public target;
     address owner = makeAddr("owner");
@@ -228,7 +228,7 @@ contract lenderpoolTest is Test {
 [⠆] Compiling...
 No files changed, compilation skipped
 
-Running 1 test for test/littlemoney.t.sol:lenderpoolTest
+Running 1 test for test/littlemoney.t.sol:littlemoneyTest
 [PASS] testAttack() (gas: 76489)
 Logs:
   0x2d3bd82a572c860ef85a36e8d4873a9deed3f76b9fddbf13fbe4fe8a97c4a579
