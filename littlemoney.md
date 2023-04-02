@@ -178,6 +178,11 @@ REVERT
 433d5260353d035952593dfd
 ```
 
+![](https://i.imgur.com/tJmvokh.png)
+
+It shows that after the `SendFlag()` is emitted, it will jump to 0x64 and stop, however it is not the case for us, as 0x64 is pushed to the stack in the beginning of `payforflag()` that is much earlier than the jumpdest at 0x1f5 that we jumped, by running the foundry debugger, we will know it will jump to the "return address" it set in `execute()` instead, that is 0x17d, which is the code in `checkPermission()` modifier, thats why we still need a bytecode not longer than 12 bytes, as it will still reach the code to check the code size
+
+
 I will use te Deployer contract to deploy the bytecode which will just return the bytes passed to it in the constructor, storing that as the runtime bytecode
 
 ### Foundry test :
